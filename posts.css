@@ -1,0 +1,158 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #f0f2f2 !important;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header {
+  background: #323842;
+
+  height: 66px;
+  padding-bottom: 10px;
+  padding: 0;
+}
+
+.header .search{
+  padding-top: 12px;
+  padding-left: 25px;
+}
+
+.header .search .searchbox{
+  height: 30px;
+  border-radius: 25px;
+  outline: none;
+}
+
+.header .search .searchbtn {
+  height: 45px;
+  width: 80px;
+  font-size: 17px;
+  color: #5ff5d4;
+  box-shadow: none;
+  border: 1px solid #5ff5d4;
+  background: #323842;
+  border-radius: 5px;
+  outline: none;
+}
+
+.header .search .searchbtn:hover {
+  background: #2bf0c4;
+  color: white;
+}
+
+.header ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  color: white;
+  list-style: none;
+}
+
+.header ul li {
+  padding-top: 20px;
+  padding-right: 30px;
+  float: left;
+  position: relative;
+}
+
+.post-wrapper {
+  display: inline-block;
+  margin: 0;
+  padding-left: 30%;
+  padding-bottom: 0;
+  padding-top: 10px;
+  padding-right: 0;
+  height: 50px;
+
+}
+
+.username {
+  background: white;
+  display: block;
+  padding: 0;
+  height: 50px;
+  width: 500px;
+
+}
+
+.username i {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.username h1 {
+  display: inline-block;
+  padding: 0;
+  height: 0;
+  font-size: 20px;
+  color: black;
+}
+
+.post-img {
+  background: white;
+  display: block;
+  padding: 0;
+  height: auto;
+  width: 500px;
+}
+
+.post-img img{
+  width: 500px;
+
+}
+
+.post-bottom {
+  background: white;
+  padding: 0;
+  height: 100px;
+  width: 500px;
+}
+
+.pos-bottom .post-text {
+  display: inline-block;
+
+}
+
+.post-bottom .likes {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 5px;
+  border: 1px solid red;
+  width: 20%;
+}
+
+.post-bottom .comment {
+  display: inline-block;
+  padding-top: 10px;
+  float: right;
+  width: 30%;
+}
+
+.post-bottom i{
+  padding-left: auto;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+.post-bottom #like {
+
+  padding-right: 10%;
+  padding-left: 15%;
+}
+
+.post-bottom #comment {
+  padding-right: 15%;
+  padding-left: 15%;
+}
+
+.post-bottom #share {
+  padding-right: 8%;
+  padding-left: 8%;
+}

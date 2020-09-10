@@ -1,0 +1,265 @@
+:root{
+  font-size: 10px;
+}
+*,
+*::after{
+  box-sizing: border-box;
+}
+body{
+  font-family: cursive;
+  min-height: 0;
+  background-color: #fafafa;
+  color: #262626;
+  padding-bottom: 0;
+  background: #222831;
+}
+.header{
+  width: 101%;
+  height: 90px;
+  display: block;
+  background: #101010;
+  margin-top: -8px;
+  margin-left: -8px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.inner_header{
+  width: 1000px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.logo-container{
+  height: 100%;
+  display: table;
+  float: left;
+}
+.logo-container h1{
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 32px;
+}
+.logo-container span{
+  color: #33adff;
+}
+.nav{
+  float: right;
+  height: 100%;
+}
+.nav a{
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 20px;
+}
+.nav a li{
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  color: white;
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+.btn{
+  all: unset;
+  background: none;
+  color: none;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+.btn:focus{
+  outline: 0.5rem auto 0;
+}
+/* profile Section*/
+.profile{
+  padding: 5rem 0;
+}
+.profile::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.profile-image{
+  float: left;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+  height: 200px;
+}
+.profile-image img{
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+}
+.profile-user-settings,
+.profile-stats,
+.profile-bio{
+  float: left;
+  width: calc(66.666% - 2rem);
+  color: white;
+}
+.profile-user-settings{
+  margin-top: 1.1rem;
+}
+.profile-user-name{
+  display: inline-block;
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: white;
+}
+.profile-edit-btn{
+  font-size: 1.4rem;
+  line-height: 1.8;
+  border: 0.1rem solid #bdbdbd;
+  border-radius: 0.3rem;
+  padding: 0 2.4;
+  margin-left: 2rem;
+  color: white;
+}
+.profile-settings-btn{
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: white;
+}
+.profile-stats{
+  margin-top: 2.3rem;
+}
+.profile-stats li{
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-right: 4rem;
+  cursor: pointer;
+}
+.profile-stats li:last-of-type{
+  margin-right: 0;
+}
+.profile-bio{
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 2.3;
+  color: white;
+}
+.profile-real-name,
+.profile-stat-count,
+.profile-esit-btn{
+  font-weight: 600;
+  color: white;
+}
+/*media query*/
+@media only screen and (min-width: 375px){
+header i{
+  display: none;
+}
+.container{
+  margin: 0;
+}
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.container{
+  width: 60%;
+  margin-left: 330px;
+  margin-top: 50px;
+  background: #222831;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.post-wrapper {
+  display: inline-block;
+  margin: 0;
+  padding-left: 30%;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-right: 0;
+  height: auto;
+}
+.username {
+  background: #222831;
+  display: block;
+  padding: 0;
+  height: 50px;
+  width: 500px;
+  border: 1px solid white;
+}
+.username i {
+  padding-left: 10px;
+  padding-top: 10px;
+  color: white;
+}
+.username h1 {
+  display: inline-block;
+  padding: 0;
+  height: 0;
+  font-size: 20px;
+  color: white;
+}
+.post-img {
+  background: white;
+  display: block;
+  padding: 0;
+  height: auto;
+  width: 500px;
+}
+
+.post-img img{
+  width: 500px;
+  z-index: 1000px;
+}
+
+.post-bottom {
+  background: #222831;
+  padding: 0;
+  height: 100px;
+  width: 500px;
+  border: 1px solid white;
+  font-size: 15px;
+}
+
+.post-bottom .post-text {
+  display: block;
+}
+
+.post-bottom .likes {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 5px;
+  width: 20%;
+  color: #fff;
+}
+
+.post-bottom .comment {
+  display: inline-block;
+  padding-top: 10px;
+  float: right;
+  width: 30%;
+  color: #fff;
+}
+
+.post-bottom i{
+  padding-left: auto;
+  padding-top: 10px;
+  padding-bottom: 2;
+  color: white;
+  vertical-align: middle;
+}
+.post-bottom #like {
+  padding-right: 10%;
+  padding-left: 30%;
+}
+
+.post-bottom #comment {
+  padding-right: 10%;
+  padding-left: 30%;
+}
